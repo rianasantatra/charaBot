@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CharaBot</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1 class="heading"></h1>
+            <h2 class="sub-heading"></h2>
+        </header>
+
+        <ul class="suggestions">
+            <li class="suggestions-item">
+                <p class="text">Design a home office for work under $500</p>
+                <span class="material-symbols-outlined"> stylus_note </span>
+            </li>
+            <li class="suggestions-item">
+                <p class="text">How can I level up my coding skills in 2025?</p>
+                <span class="material-symbols-outlined"> lightbulb_2 </span>
+            </li>
+            <li class="suggestions-item">
+                <p class="text">Suggest some useful tools for debugging Javascript</p>
+                <span class="material-symbols-outlined"> search </span>
+            </li>
+            <li class="suggestions-item">
+                <p class="text">Create a Vue component for a simple todo list</p>
+                <span class="material-symbols-outlined"> apps </span>
+            </li>
+        </ul>
+
+        <div class="prompt-container">
+            <div class="prompt-wrapper">
+                <form action="#" class="prompt-form">
+                    <input type="text" name="prompt" id="prompt" class="prompt-input" required />
+                    <div class="prompt-actions">
+                        <button id="add-file-btn" type="button" class="material-symbols-outlined">
+                            attach_file
+                        </button>
+                        <button id="delete-chat-btn" type="button" class="material-symbols-outlined">
+                            arrow_upward
+                        </button>
+                    </div>
+                </form>
+                <button type="button" id="theme-toggle-btn" class="material-symbols-outlined">
+                    light_mode
+                </button>
+                <button type="button" id="theme-toggle-btn" class="material-symbols-outlined">
+                    delete
+                </button>
+            </div>
+            <p class="disclaimer-text">Double-check it as the IA can still make mistakes</p>
+        </div>
+    </div>
+</body>
+
+</html>
