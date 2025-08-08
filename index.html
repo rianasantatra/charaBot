@@ -12,11 +12,12 @@
 
 <body>
     <div class="container">
+        <!-- HEADER -->
         <header class="app-header">
-            <h1 class="heading"></h1>
-            <h2 class="sub-heading"></h2>
+            <h1 class="heading">Hi, there</h1>
+            <h2 class="sub-heading">How can I assist you today?</h2>
         </header>
-
+        <!-- SUGGESTIONS -->
         <ul class="suggestions">
             <li class="suggestions-item">
                 <p class="text">Design a home office for work under $500</p>
@@ -35,16 +36,32 @@
                 <span class="material-symbols-outlined"> apps </span>
             </li>
         </ul>
-
+        <!-- CHATS  -->
+        <div class="chats-container">
+            <div class="message user-message">
+                <p class="message-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque assumenda, omnis
+                    facere eius maxime doloribus praesentium, accusamus, natus dolores excepturi eligendi deleniti ex
+                    illo fugit. Laudantium, expedita tenetur. In, harum!
+                </p>
+            </div>
+            <div class="message bot-message">
+                <img src="robot.svg" alt="robot" class="avatar">
+                <p class="message-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque assumenda, omnis
+                    facere eius maxime doloribus praesentium, accusamus, natus dolores excepturi eligendi deleniti ex
+                    illo fugit. Laudantium, expedita tenetur. In, harum!
+                </p>
+            </div>
+        </div>
+        <!-- PROMPT INPUT -->
         <div class="prompt-container">
             <div class="prompt-wrapper">
                 <form action="#" class="prompt-form">
-                    <input type="text" name="prompt" id="prompt" class="prompt-input" required />
+                    <input type="text" name="prompt" id="prompt" class="prompt-input" placeholder="Ask me" required />
                     <div class="prompt-actions">
-                        <button id="add-file-btn" type="button" class="material-symbols-outlined">
+                        <button id="add-file-btn" type="file" class="material-symbols-outlined">
                             attach_file
                         </button>
-                        <button id="delete-chat-btn" type="button" class="material-symbols-outlined">
+                        <button id="send-prompt-btn" type="button" class="material-symbols-outlined">
                             arrow_upward
                         </button>
                     </div>
@@ -52,7 +69,7 @@
                 <button type="button" id="theme-toggle-btn" class="material-symbols-outlined">
                     light_mode
                 </button>
-                <button type="button" id="theme-toggle-btn" class="material-symbols-outlined">
+                <button type="button" id="delete-toggle-btn" class="material-symbols-outlined">
                     delete
                 </button>
             </div>
